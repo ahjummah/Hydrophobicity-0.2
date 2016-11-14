@@ -458,9 +458,9 @@ public class AnsLab3 extends javax.swing.JFrame {
 
     public double[] getHydroValue(int scaleChosen, int windowLength, String sequence) {
         int diff = (windowLength / 2) * 2;
-        System.out.println(diff);
+//        System.out.println(diff);
         double[] hydrovalue = new double[sequence.length() - diff];
-        System.out.println(sequence.length() - diff);
+//        System.out.println(sequence.length() - diff);
         for (int i = 0; i < hydrovalue.length; i++) {
             double value = 0.0;
             for (int j = i, ctr = 0; ctr < windowLength; j++, ctr++) {
@@ -636,7 +636,7 @@ public class AnsLab3 extends javax.swing.JFrame {
             frame = new JFrame("Hydrophobicity Graphs");
 
             frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-            frame.setSize(800, 600);
+            frame.setSize(1000, 800);
             frame.setLocationRelativeTo(null);
 
             JPanel panel = new JPanel();
@@ -664,8 +664,5 @@ public class AnsLab3 extends javax.swing.JFrame {
             frame.pack();
         }
 
-        private void generateReportButtonPerformed(ActionEvent e) {//    String sb = output;
-
-        }
     }
 }
